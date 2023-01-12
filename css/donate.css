@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow-x: hidden; */
 }
 .header-container {
     background-image: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%), url(../images/donation0.jpg);
@@ -201,5 +202,65 @@ hr {
     color: #B74245;
     font-weight: 700;
     font-size: 30px;
+
+}
+
+/* responsive  style */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+   .update-description, .update-box{
+    margin: 0;
+   }
+   .update-box{
+    width: 100%;
+   }
+   .S{
+    margin-top: 20px;
+   }
+   .plan-description{
+    margin: 0;
+    padding: 0 10px;
+   }
+   .image-text{
+    flex-direction: column;
+    margin: 25px;
+   }
+
+   .photo{
+    margin: 10px;
+    flex-direction: column-reverse;
+   }
+   .photo img{
+    width: 100%;
+   }
+
+   .donation-money{
+    padding: 10px;
+    margin: 0 auto;
+   }
+   .donation-taka{
+    flex-wrap: wrap;
+   }
+   .header-container, .header-title, .header-description, .btn-primary{
+    width: 100%;
+    padding: 0 5px 0 5px;
+    margin: 0;
+   }
+.header-title{
+    padding-top: 70px;
+}
+.header-description{
+    padding-top: 30px;
+}
+
+.btn-primary{
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px;
+}
 
 }
